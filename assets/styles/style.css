@@ -1,0 +1,890 @@
+@font-face {
+    font-family: 'Gill Sans Nova';
+    src: url(../fonts/gill-sans-nova.ttf);
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans Nova', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* topbar  */
+.tel--btn {
+    color: #fff;
+}
+
+.tel--btn img {
+    margin-right: 10px;
+}
+
+.logo-wrap img {
+    width: 100%;
+}
+
+.main-btn {
+    padding: 1rem 4rem;
+    border-radius: 30px;
+    transition: .4s ease;
+    display: inline-block;
+}
+
+.btn--transparent {
+    background: transparent;
+}
+
+.text__white {
+    color: #fff;
+}
+
+.border__white {
+    border: 2px solid #fff;
+}
+
+.btn--transparent:hover {
+    background: #fff;
+    color: #000;
+}
+
+.tel--btn:hover {
+    color: #efefef;
+}
+
+header hr {
+    background: #fff;
+}
+
+/* topbar  */
+
+/* header  */
+header {
+    position: relative;
+    z-index: 999;
+    padding: 10px 0;
+}
+
+header nav ul li a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0 1.5rem !important;
+    transition: .3s ease;
+}
+
+header nav ul li a:hover {
+    color: #2689EE
+}
+
+/* header  */
+
+
+/* banner section */
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: -210px;
+}
+
+.banner--home {
+    background: linear-gradient(rgba(0, 0, 0, 0.336), rgba(0, 0, 0, 0.336)),url(../images/banner-bg.jpg) no-repeat center ;
+    background-size: cover;
+    height: 1080px;
+
+}
+.banner--inner {
+    background: linear-gradient(rgba(0, 0, 0, 0.336), rgba(0, 0, 0, 0.336)),url(../images/award-img.jpg) no-repeat center ;
+    background-size: cover;
+    height:  500px;
+
+}
+
+
+.banner--text-wrapp h1 {
+    color: #fff;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.banner--text-wrapp p {
+    font-size: 20px;
+    color: #fff;
+    text-transform: capitalize;
+    margin: 12px 0;
+}
+
+.banner--text-wrapp img {
+    min-height: 184px;
+    max-width: 184px;
+    width: 100%;
+    height: auto;
+}
+
+.banner--form-wrapp {
+    background: #fff;
+    padding: 2rem;
+}
+
+.banner--form-wrapp h3 {
+    color: #000000;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.banner--form-wrapp form input[type="checkbox"] {
+    visibility: hidden;
+}
+
+.banner--form-wrapp form input[type="checkbox"]:checked+label {
+    border: 1px solid #2689EE;
+    background: #E8F4FC !important;
+    color: #2689EE;
+}
+
+.banner-check--box-wrapp {
+    margin: 20px 0;
+}
+
+.banner-check--box-wrapp label {
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    cursor: pointer;
+    border: 1px solid #1A1A1A;
+    font-size: 18px;
+    color: #000000;
+    text-transform: uppercase;
+    transition: .4s ease;
+}
+
+.banner-check--box-wrapp {
+    text-align: center;
+}
+
+.banner--form-wrapp label {
+    background: #F0F2F8 !important;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner--form-wrapp .banner-check--box-wrapp label {
+    background: transparent !important;
+}
+
+
+.banner--form-wrapp input[type="text"] {
+    border: 0;
+    background: transparent;
+    outline: none;
+}
+
+.banner--form-wrapp input[type="text"]::placeholder {
+    color: #00000047;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.banner--form-wrapp label span {
+    color: #000000;
+    font-size: 18px;
+    margin-bottom: .5rem;
+}
+
+.banner--form-wrapp label svg {
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.banner--form-wrapp label {
+    position: relative;
+}
+
+.banner--form-wrapp input[type="submit"] {
+    background: #2689EE;
+    border: 0;
+    padding: 1rem;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 20px;
+    transition: .4s ease;
+}
+
+.banner--form-wrapp input[type="submit"]:hover {
+    background: #1465b9;
+}
+
+.banner--bottom-sec {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    background: #434343ba;
+    padding: 2rem 0;
+}
+
+label.input--submit-wrapp {
+    background: transparent !important;
+}
+
+.sec--title {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.post--title {
+    font-size: 26px;
+}
+/* banner section */
+
+/* car info sec  */
+.cars.cars--info {
+    padding: 5rem 0;
+    background: #F3F3F3;
+}
+
+.cars__info-wrapper img {
+    max-width: 304px;
+    height: 219px;
+    width: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.car__name {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 16px 0;
+}
+
+.cars__details-list {
+    list-style: none;
+}
+
+.cars__details-list li {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #000;
+    padding: 8px 0;
+    font-size: 16px;
+}
+
+.cars__details-list li:last-child {
+    border: 0;
+}
+
+.car__conc {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.btn--colored {
+    background: #2689EE;
+    display: inline-block;
+    margin: 22px 0;
+    transition: .4s ease;
+}
+
+.btn--colored:hover {
+    background: #1362b3;
+    color: #ddd;
+}
+
+.btn__underlined {
+    color: #000000;
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    border-bottom: 1px solid #000;
+    max-width: max-content;
+    margin: 10px auto;
+}
+
+.cars__info-wrapper {
+    padding: 16px;
+}
+
+.cars__info-wrapper .main-btn {
+    padding: 1rem 2.5rem;
+}
+
+.car__sidebar {
+    background: #121212;
+    padding: 3rem 1.5rem;
+}
+
+.car__sidebar img:nth-of-type(2) {
+    width: 100%;
+    margin: 3rem 0;
+}
+
+h3.heading__medium {
+    font-size: 25px;
+    margin: 16px 0;
+}
+
+p.para__medium {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+a.btn__normal {
+    font-size: 14px;
+}
+
+.btn__white {
+    color: #fff;
+    transition: .4s ease;
+}
+
+.btn__white:hover {
+    color: #ddd;
+}
+/* car info sec  */
+
+/* award sec  */
+.award-sec {
+    padding: 5rem 0;
+}
+
+.sec__video-wrapp video {
+    width: 100%;
+    object-fit: contain;
+}
+
+.sec__video-wrapp {
+    position: relative;
+}
+
+.video__text-wrap {
+    max-width: 700px;
+    margin: 3rem auto;
+    text-align: center;
+}
+
+.bar__bottom {
+    background: #000000;
+    width: 134px;
+    height: 2px;
+    margin: 4rem auto;
+}
+
+.text__dark {
+    color: #000000;
+}
+
+.text__light {
+    color: #828282;
+}
+
+.border--dark {
+    border: 2px solid #000000;
+}
+
+.video__text-wrap .main-btn {
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+a.main-btn.btn--transparent.border--dark.text__dark:hover {
+    background: #000;
+    color: #fff;
+}
+/* award sec  */
+
+/* section services  */
+.services {
+    background: #F3F3F3;
+    padding: 5rem 0;
+}
+
+.services__main-text-wrapp {
+    text-align: center;
+}
+
+.services__main-text-wrapp .bar__bottom {
+    margin: 3rem auto;
+}
+
+.services__box img {
+    width: 100%;
+}
+
+.services__text-wrapp {
+    background: #fff;
+    padding: 1.5rem;
+}
+
+.services__text-wrapp h4 {
+    font-size: 20px;
+}
+
+.services__text-wrapp .btn__underlined {
+    margin: 18px 0;
+}
+/* section services  */
+
+/* client  */
+
+.clients {
+    padding: 5rem 0;
+}
+
+.client__logo img {
+    width : 160px;
+    height : 40px;
+    object-fit: contain;
+}
+
+.client__box-wrapp {
+    display: flex;
+    align-items: center;
+    margin: 10px 14px;
+}
+
+.client__logo {
+    margin-right: 40px;
+}
+
+.client__text {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 1.8rem 0;
+}
+
+.clients .slick-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-top: 3rem;
+}
+
+.clients .slick-dots li button {
+    display: none;
+}
+
+.clients .slick-dots li {
+    height: 3px;
+    width : 30px;
+    background : #C4C4C4;
+    margin : 0 4px;
+}
+
+.clients .slick-dots li.slick-active {
+    background : #000;
+}
+
+.clients .slick-arrow {
+    position: absolute;
+    bottom: 0;
+    visibility: hidden;
+}
+
+.clients .slick-prev {
+    left : calc(50% - 150px);
+}
+
+.clients .slick-next {
+    right : calc(50% - 150px);
+}
+
+.clients .slick-prev:before {
+    content: '←';
+    position: absolute;
+    left : 0;
+    visibility: visible;
+    cursor: pointer;
+    font-size : 40px;
+    bottom: -24px;
+}
+.clients .slick-next:after {
+    content: '→';
+    position: absolute;
+    visibility: visible;
+    cursor: pointer;
+    font-size : 40px;
+    right : 0;
+    bottom: -24px;
+}
+/* client  */
+
+/* winning banner  */
+.winning-banner {
+    background: url(../images/award-winning-2.jpg) no-repeat center;
+    background-size: cover;
+    padding: 4rem 0;
+    min-height: 900px;
+
+}
+.bg_white {
+    background: #fff;
+}
+.winning__text-wrapp {
+    text-align: center;
+}
+/* winning banner  */
+
+/* footer  */
+#footer {
+    background: #202020;
+    padding: 2rem 0;
+}
+
+footer .tel--btn {
+    display: block;
+    text-align: right;
+}
+
+h3.foo__title {
+    font-size: 18px;
+    margin: 20px 0 30px;
+}
+
+.foo__list {
+    list-style: none;
+}
+
+.foo__list a {
+    color: #fff;
+}
+
+.foo__list li {
+    margin: 8px 0;
+}
+
+.footer__form-wrapp {
+    background: #242424;
+    padding: 2rem;
+}
+
+.footer__form-wrapp form input {
+    display: block;
+}
+
+.footer__form-wrapp form label {
+    width: 100%;
+}
+
+.footer__form-wrapp form label input {
+    width: 100%;
+    padding: .8rem;
+    margin: 14px 0 0;
+    color: #000;
+    font-size: 16px;
+    border: 0;
+    outline: none;
+}
+
+.footer__form-wrapp form label input::placeholder {
+    color: #727272;
+    font-size: 14px;
+}
+
+.footer__form-wrapp form input[type="submit"] {
+    background: #2689EE;
+    color: #fff;
+    padding: 1rem 3rem;
+    border-radius: 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 0;
+    outline: 0;
+    transition: .4s ease;
+    margin-top: 1rem;
+}
+.footer__form-wrapp form input[type="submit"]:hover {
+    background-color: #1362b3;
+}
+
+.spacer {
+    height: 60px;
+}
+
+/* footer social button */
+
+.social__links-wrapp {
+    margin-top: 3rem;
+}
+
+.social__links-wrapp a {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: .3s ease;
+    display: inline-block;
+}
+
+.social__links-wrapp a:hover {
+    transform: translateY(-6px) rotate(360deg);
+}
+
+.social__links-wrapp a:nth-of-type(1):hover {
+    color: #4267B2;
+}
+
+.social__links-wrapp a:nth-of-type(2):hover {
+    color: #00acee;
+}
+
+.social__links-wrapp a:nth-of-type(3):hover {
+    color: #FF0000;
+}
+
+.social__links-wrapp a:nth-of-type(4):hover {
+    color: #E60023;
+}
+/* footer social button */
+
+/* footer bottom */
+.social__links-wrapp {
+    margin-top: 3rem;
+}
+
+.foo__bottom p {
+    color: #ffffff7a;
+}
+
+.foo__bottom {
+    margin-top: 3rem;
+}
+
+.foo__btns-wrapp {
+    text-align: right;
+}
+
+.foo__btns-wrapp a {
+    color: #ffffff7a;
+    font-weight: 400;
+    padding: 0 20px;
+}
+/* footer bottom */
+/* footer  */
+
+/* responsive  */
+@media (max-width : 1024px){
+    /* navbar  */
+    header nav ul li a {
+        font-size: 16px;
+    }
+
+
+    /* navbar  */
+    /* banner  */
+    .banner--text-wrapp h1 {
+        font-size: 50px;
+    }
+    .banner--text-wrapp p {
+        font-size: 18px;
+
+    }
+
+    /* banner form */
+    .banner--form-wrapp h3 {
+        font-size: 30px;
+    }
+    .banner--form-wrapp {
+        padding: 1rem;
+    }
+    .banner-check--box-wrapp label {
+        font-size: 14px;
+    }
+    .banner--form-wrapp label span {
+        font-size: 16px;
+    }
+    .banner--form-wrapp input[type="submit"] {
+        font-size: 16px;
+    }
+    /* banner form */
+
+    /* below banner  */
+    .sec--title {
+        font-size: 30px;
+    }
+    .post--title {
+        font-size: 20px;
+    }
+    /* below banner  */
+    /* banner  */
+
+    /* car info  */
+    .cars__info-wrapper {
+        padding: 6px;
+    }
+    .cars__info-wrapper .main-btn {
+        padding: 1rem 1.8rem;
+        font-size: 14px;
+    }
+    h3.heading__medium {
+        font-size: 18px;
+    }
+    /* car info  */
+}
+
+@media (max-width:880px){
+    .main-btn {
+        padding: 1rem 2rem;
+    }
+    .cars__info-wrapper .main-btn {
+        padding: 1rem 1.2rem;
+    }
+    .banner--form-wrapp .banner-check--box-wrapp label {
+        padding: 0.8rem;
+    }
+}
+
+@media(max-width:768px){
+    .main-btn {
+        padding: 1rem 1.4rem;
+    }
+}
+@media(max-width:767px){
+    /* banner  */
+    .banner--home {
+        height: 1480px;
+    }
+    .banner--text-wrapp h1 {
+        font-size: 40px;
+    }
+    .banner--text-wrapp {
+        text-align: center;
+        margin: 1rem 0 2rem;
+    }
+    .main-btn {
+        margin-top: 1.5rem;
+    }
+    /* banner  */
+    /* car info  */
+    .cars__info-wrapper .btn__underlined {
+        margin: 10px;
+    }
+    /* car info  */
+    /* services  */
+    .services__box {
+        margin: 20px 0;
+    }
+    .winning-banner {
+        min-height: 500px;
+    }
+    /* services  */
+    /* footer  */
+    .foo__bottom p {
+        text-align: center;
+    }
+    .foo__btns-wrapp {
+        text-align: center;
+        margin-top: 1rem;
+    }
+    /* footer  */
+}
+
+@media (max-width:575px){
+    .logo-wrap img {
+        max-width: 200px;
+        width: 100%;
+    }
+
+    .top__bar .main-btn.btn--transparent.text__white.border__white {
+        display: none;
+    }
+
+    .top__bar .row {
+        flex-wrap: nowrap;
+    }
+
+    .top__bar .row .col-md-4:nth-of-type(3) {
+        display: none;
+    }
+
+    /* banner  */
+    .banner--text-wrapp h1 {
+        font-size: 30px;
+    }
+    .banner--home {
+        height: 1340px;
+    }
+    /* banner  */
+}
+
+@media(max-width:525px){
+    .sec--title {
+        font-size: 24px;
+    }
+    .post--title {
+        font-size: 16px;
+    }
+    .bar__bottom {
+        margin: 2rem auto;
+    }
+}
+
+@media(max-width:475px){
+    .cars__info-wrapper {
+        margin: 16px 0;
+        box-shadow: 0 0 19px #cccccc4a;
+        padding: 2rem;
+    }
+    img.foo-logo {
+        max-width: 250px;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    footer .tel--btn {
+        margin-top: 2rem;
+        text-align: center;
+    }
+}
+
+@media(max-width:375px){
+    .banner-check--box-wrapp {
+        margin: 0
+    }
+    .banner--form-wrapp h3 {
+        font-size: 24px;
+    }
+    .client__logo {
+        margin-right: 20px;
+    }
+}
+div#vs5__combobox,#vs6__combobox {
+    /* border: 0px !important; */
+    border-top: 0px;
+    /* border-bottom: 1px solid black; */
+    border-bottom: 0px;
+    border-right: 0px;
+    border-left: 0px;
+}
+.vs__open-indicator{
+  display: none;
+}
+
+/* responsive  */
